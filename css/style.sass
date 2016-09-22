@@ -1,0 +1,394 @@
+// Utility
+$primary-color: #f7f9ff
+
+img.responsive
+  display: block
+  height: auto
+  max-width: 100%
+
+a, a:hover, a:active, a:focus, a:visited
+  text-decoration: none
+  color: $primary-color
+
+.clearfix::after
+  content: ''
+  clear: both
+  display: block
+
+.column
+  float: left
+  width: 50%
+  box-sizing: border-box
+
+  &.feature
+    width: 33.3%
+
+input, textarea
+  box-sizing: border-box
+
+textarea
+  resize: none
+
+// General
+body
+  min-width: 320px
+  font: 16px 'Circe', Helvetica, Arial, sans-serif
+  color: $primary-color
+
+.section-wrapper
+  box-sizing: border-box
+
+  &.first
+    background: url(../img/bg1.png) no-repeat center center fixed
+    background-size: cover
+    height: 100vh
+    min-height: 480px
+
+  &.gradient
+    background: linear-gradient(to bottom, #38445e 0%, #49617c 30%, #434e6c 75%, #373f55 100%)
+
+  &.contact-form
+    background: url(../img/bg2.png) no-repeat center center fixed
+    background-size: cover
+
+  &.last
+    background: #3a4258
+
+section, header, footer
+  padding: 0 20px
+  max-width: 1200px
+  margin: 0 auto
+
+h1
+  font-size: 3em
+  font-weight: 800
+  margin-bottom: 35px
+  text-transform: uppercase
+  letter-spacing: 0.01em
+
+h2
+  font-size: 2.25em
+  text-transform: uppercase
+  font-weight: bold
+  margin-bottom: 30px
+
+h3
+  text-transform: uppercase
+  margin-bottom: 10px
+  font-weight: 800
+  font-size: 1.1875em
+  letter-spacing: -0.05em
+
+hr
+  border: 0
+  margin: 0
+  width: 100%
+
+  &.gradient-divider
+    height: 5px
+    background: linear-gradient(to right, #a3cd8c 0%, #7da3d7 100%)
+
+  &.sub-divider
+    height: 3px
+    background: #4f647d
+    opacity: 0.3
+
+  &.ribbon
+    height: 10px
+    background: url(../img/ribbon.png) repeat
+
+// Buttons
+.button
+  display: inline-block
+  vertical-align: middle
+  padding: 10px 20px
+  transition: background-color .33s, border-color .33s, color .33s
+
+  &.button-main
+    padding: 25px 100px
+    background: #a3cd8c
+    border-radius: 50px
+    font-size: 1.5em
+    text-transform: uppercase
+    color: #fff
+    font-weight: 800
+
+    &:hover
+      text-decoration: none
+      color: #fff
+      background: #87be68
+
+  &.button-section
+    padding: 13px 20px
+    border: 2px solid #a3cd8c
+    border-radius: 30px
+    font-size: 14px
+    color: #a3cd8c
+
+    &:hover
+      color: #87be68
+      border-color: #87be68
+
+  &.button-contact
+    width: 100%
+    padding: 23px
+    background: #7da3d7
+    border: none
+    border-radius: 5px
+    font-weight: bold
+    text-transform: uppercase
+    color: $primary-color
+
+    &:hover
+      background: #5687cb
+
+  .arrow
+    display: inline-block
+    vertical-align: middle
+    width: 9px
+    height: 18px
+    background: url(../img/arrow.svg)
+    margin-left: 10px
+
+// Header
+header
+  padding-top: 20px
+
+  .menu-left
+    float: left
+
+    > *
+      display: inline-block
+      vertical-align: middle
+
+  .logo
+    margin: 0 35px 0 30px
+
+  .rates
+    text-align: center
+
+  .rate
+    font-size: 21px
+    font-weight: 400
+    letter-spacing: -0.02em
+    margin-right: 20px
+
+  .delta
+    padding: 6px 10px
+    border-radius: 15px
+    background: #fff
+    color: red
+    font-size: 12px
+
+  nav
+    float: right
+    padding-top: 15px
+
+    ul
+      text-align: right
+
+      li
+        display: inline-block
+        margin-left: 5px
+
+        a
+          padding: 8px 20px
+          border-radius: 20px
+          border: 2px solid transparent
+          transition: border-color 0.33s
+          font-weight: bold
+          font-size: 12px
+          text-transform: uppercase
+
+          &:hover
+            border-color: $primary-color
+
+// Sections
+section
+  .subheader-main
+    display: inline-block
+    font-size: 1.25em
+    padding: 0 50px
+    font-weight: 700
+    line-height: 1.5
+    margin-bottom: 50px
+    letter-spacing: -0.01em
+
+  .subheader
+    display: block
+    color: #8c95a5
+    font-size: 14px
+    margin-bottom: 30px
+    max-width: 390px
+
+  &.first
+    max-width: 800px
+    position: relative
+    top: 45%
+    transform: translateY(-50%)
+    text-align: center
+
+  &.second
+    padding-top: 75px
+    padding-bottom: 87px
+
+    .description
+      padding: 45px 0 20px 58px
+
+  &.third
+    padding-top: 110px
+    padding-bottom: 87px
+    text-align: center
+
+    .feature
+      padding: 0 50px
+
+      img
+        display: inline-block
+        margin-bottom: 40px
+
+        &.add-padding
+          margin-bottom: 45px
+
+      .feature-description
+        color: #a4afac
+        font-size: 14px
+
+  &.fourth
+    padding-top: 110px
+    padding-bottom: 87px
+
+    .image
+      padding: 28px 0 0 108px
+
+    .description
+      padding-left: 130px
+
+      .subheader
+        margin-bottom: 70px
+
+  &.fifth
+    padding-top: 110px
+    padding-bottom: 90px
+
+    .description
+      padding-left: 58px
+
+      .subheader
+        margin-bottom: 45px
+
+    .image
+      padding-left: 33px
+
+  &.sixth
+    padding-top: 89px
+
+    .transactions
+      width: 52.3%
+      padding-left: 47px
+      padding-bottom: 88px
+
+      table
+        width: 100%
+        text-align: center
+        font-size: 14px
+        table-layout: fixed
+
+        td
+          box-sizing: border-box
+          border: 1px solid #4c556c
+          vertical-align: middle
+
+          &:first-of-type
+            width: 45%
+            color: #76a3d7
+            text-overflow: ellipsis
+            overflow: hidden
+            white-space: nowrap
+            padding: 15px 24px
+
+          &:nth-of-type(2)
+            width: 30%
+            color: #9fa3ac
+
+          &:nth-of-type(3)
+            width: 25%
+            color: #61b77a
+
+    .news
+      width: 47.7%
+      padding-left: 110px
+
+      .post
+        font-size: 14px
+        margin-bottom: 18px
+
+        a
+          display: inline-block
+          margin-bottom: 10px
+
+        .published
+          color: #9fa3b0
+
+  &.seventh
+    padding-bottom: 30px
+
+    form.contact
+      position: relative
+      top: 95px
+      max-width: 630px
+      height: 560px
+      margin: auto
+      background: #fff
+      border-radius: 3px
+      overflow: hidden
+      z-index: 1
+
+      h2
+        color: #4a4a4a
+        text-align: center
+        margin: 50px 0 40px
+
+      fieldset
+        padding: 0 80px
+
+        input, textarea
+          width: 100%
+          margin-bottom: 15px
+          border: none
+          background: #f4f7fb
+          padding: 15px 20px
+          color: #4a4a4a
+          outline: none
+
+        textarea
+          margin-bottom: 63px
+
+  &.eighth
+    padding-top: 120px
+    padding-bottom: 75px
+    max-width: 470px
+    text-align: center
+
+footer
+  font-size: 14px
+  text-transform: uppercase
+
+  *
+    display: inline-block
+
+  nav, .copyright
+    height: 70px
+    line-height: 70px
+
+  nav
+    margin-left: 15px
+
+    ul li
+      margin-left: 20px
+
+  .copyright
+    float: right
+    margin-right: 10px
+
+@import 'adaptivity'

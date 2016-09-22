@@ -1,0 +1,84 @@
+$tablet: 820px
+$mobile: 420px
+
+body
+  @media (max-width: $tablet)
+    font-size: 14px
+
+  @media (max-width: $mobile)
+    font-size: 12px
+
+header
+  @media (max-width: 895px)
+    text-align: center
+
+    nav, .menu-left
+      float: none
+
+    nav
+      width: 100%
+
+      ul
+        text-align: center
+
+        li
+          margin-bottom: 15px
+
+@media (max-width: $tablet)
+  .column
+    width: 100%
+
+  h1
+    font-size: 2em
+    margin-bottom: 10px
+
+  .button.button-main
+      padding: 15px 60px
+
+  section
+    .subheader-main
+        margin-bottom: 20px
+
+    &.first
+        top: 30%
+
+    &.third
+      .feature
+        width: 100%
+        margin-bottom: 50px
+
+    &.second, &.fourth, &.fifth
+      .description, .image
+        text-align: center
+        padding-left: 0
+
+        .subheader, img
+          margin-left: auto
+          margin-right: auto
+
+    &.sixth
+      .transactions, .news
+        width: 100%
+        padding-left: 0
+        text-align: center
+
+@media (max-width: 480px)
+  footer
+    text-align: center
+
+    nav
+      height: auto
+      line-height: 40px
+      width: 100%
+      margin-left: 0
+
+      ul, ul li
+        margin-left: 0
+
+        li
+          width: 100%
+
+    .copyright
+      margin-top: 20px
+      float: none
+      width: 100%
